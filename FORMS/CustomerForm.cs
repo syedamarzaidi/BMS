@@ -21,5 +21,20 @@ namespace BMS.FORMS
         {
             CustomerPanelTop.BackColor = Color.IndianRed;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CustomerPanelTop_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
