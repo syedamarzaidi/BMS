@@ -1,0 +1,20 @@
+c:\users\student\documents\visual studio 2015\Projects\BMS\BMS\bin\Debug\BMS.exe.config
+c:\users\student\documents\visual studio 2015\Projects\BMS\BMS\bin\Debug\BMS.exe
+c:\users\student\documents\visual studio 2015\Projects\BMS\BMS\bin\Debug\BMS.pdb
+c:\users\student\documents\visual studio 2015\Projects\BMS\BMS\obj\Debug\BMS.csprojResolveAssemblyReference.cache
+c:\users\student\documents\visual studio 2015\Projects\BMS\BMS\obj\Debug\BMS.Form1.resources
+c:\users\student\documents\visual studio 2015\Projects\BMS\BMS\obj\Debug\BMS.Properties.Resources.resources
+c:\users\student\documents\visual studio 2015\Projects\BMS\BMS\obj\Debug\BMS.csproj.GenerateResource.Cache
+c:\users\student\documents\visual studio 2015\Projects\BMS\BMS\obj\Debug\BMS.exe
+c:\users\student\documents\visual studio 2015\Projects\BMS\BMS\obj\Debug\BMS.pdb
+C:\Users\kali\Desktop\BMS\BMS\bin\Debug\BMS.exe.config
+C:\Users\kali\Desktop\BMS\BMS\obj\Debug\BMS.exe
+C:\Users\kali\Desktop\BMS\BMS\obj\Debug\BMS.pdb
+C:\Users\kali\Desktop\BMS\BMS\bin\Debug\BMS.exe
+C:\Users\kali\Desktop\BMS\BMS\bin\Debug\BMS.pdb
+C:\Users\kali\Desktop\BMS\BMS\obj\Debug\BMS.csprojResolveAssemblyReference.cache
+C:\Users\kali\Desktop\BMS\BMS\obj\Debug\BMS.Form1.resources
+C:\Users\kali\Desktop\BMS\BMS\obj\Debug\BMS.Properties.Resources.resources
+C:\Users\kali\Desktop\BMS\BMS\obj\Debug\BMS.csproj.GenerateResource.Cache
+C:\Users\kali\Desktop\BMS\BMS\obj\Debug\BMS.FORMS.AdminForm.resources
+C:\Users\kali\Desktop\BMS\BMS\obj\Debug\BMS.FORMS.CustomerForm.resources
