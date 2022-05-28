@@ -50,7 +50,7 @@
             this.panel2.BackColor = System.Drawing.Color.DarkRed;
             this.panel2.Location = new System.Drawing.Point(3, 52);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(981, 45);
+            this.panel2.Size = new System.Drawing.Size(981, 53);
             this.panel2.TabIndex = 1;
             // 
             // pictureBox1
