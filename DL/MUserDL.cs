@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BMS.BL;
+using System.IO;
 namespace BMS.DL
 {
     class MUserDL
@@ -39,6 +40,36 @@ namespace BMS.DL
                 }
             }
             return null;
+        }
+        public static void saveUserData(string path)
+        {
+            StreamWriter file = new StreamWriter(path);
+            foreach (var us in users)
+            {
+                file.WriteLine(us.Username + "," + us.Password + "," + us.Role);
+            }
+            file.Flush();
+            file.Close();
+        }
+        public static bool LoadUserData(string path)
+        {
+            string Record;
+            if (File.Exists(path))
+            {
+                StreamReader file = new StreamReader(path);
+                while ((Record = file.ReadLine()) != null)
+                {
+                    string[] splitedRecord = Record.Split(',');
+                    string Username = splitedRecord[0];
+                    string Password = splitedRecord[1];
+                    string Role = splitedRecord[2];
+                    MUser m = new MUser(Username, Password, Role);
+                    users.Add(m);
+                }
+                file.Close();
+                return true;
+            }
+            return false;
         }
     }
 }

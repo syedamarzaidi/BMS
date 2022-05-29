@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace BMS.FORMS
 {
-    public partial class AdminForm : Form
+    public partial class AddUserForm : Form
     {
-        public AdminForm()
+        public AddUserForm()
         {
             InitializeComponent();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

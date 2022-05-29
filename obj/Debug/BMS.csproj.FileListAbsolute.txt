@@ -18,3 +18,4 @@ C:\Users\kali\Desktop\BMS\BMS\obj\Debug\BMS.Properties.Resources.resources
 C:\Users\kali\Desktop\BMS\BMS\obj\Debug\BMS.csproj.GenerateResource.Cache
 C:\Users\kali\Desktop\BMS\BMS\obj\Debug\BMS.FORMS.AdminForm.resources
 C:\Users\kali\Desktop\BMS\BMS\obj\Debug\BMS.FORMS.CustomerForm.resources
+C:\Users\kali\Desktop\BMS\BMS\obj\Debug\BMS.FORMS.AddUserForm.resources

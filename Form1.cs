@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using BMS.DL;
 using BMS.BL;
 using BMS.FORMS;
+using BMS.FILES;
 namespace BMS
 {
     public partial class Form1 : Form
@@ -21,6 +22,10 @@ namespace BMS
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            if (MUserDL.LoadUserData(FilePaths.MUserData))
+            {
+                MessageBox.Show("Data Loaded Successfully");
+            }
             this.BackColor = Color.LightGray;
         }
 
@@ -30,14 +35,25 @@ namespace BMS
             string Password = txtPassword.Text;
             MUser m = new MUser(Username, Password);
             MUser user = MUserDL.isUserExists(m);
-          //  if(user != null)
-           // {
+            if (user != null)
+            {
                 this.Hide();
-             //   if (user.Role == "Customer")
-               /// {
+                if (user.Role == "Customer")
+                {
                     CustomerForm extraForm = new CustomerForm();
                     extraForm.Show();
-                //}
-            }   
+                }
+                else if(user.Role == "Admin")
+                {
+                    // AdminForm extraForm = new AdminForm();
+                    AddUserForm extraForm = new AddUserForm();
+                    extraForm.Show();
+                }
+                else if(user.Role == "Employee")
+                {
+
+                }
+            }
         }
     }
+}
