@@ -17,7 +17,10 @@ namespace BMS.DL
         public static void removeUsersFromList(MUser m)
         {
             int userIdx = getUserIdx(m.Username);
-            users.RemoveAt(userIdx);
+            if (userIdx != -1)
+            {
+                users.RemoveAt(userIdx);
+            }
         }
         static int getUserIdx(string Username)
         {

@@ -34,13 +34,13 @@
             this.lblNumber = new System.Windows.Forms.Label();
             this.lblUsername = new System.Windows.Forms.Label();
             this.lblPassword = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.txtAddress = new System.Windows.Forms.TextBox();
+            this.txtCnic = new System.Windows.Forms.TextBox();
+            this.txtPhoneNumber = new System.Windows.Forms.TextBox();
+            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.cmbRole = new System.Windows.Forms.ComboBox();
             this.lblRole = new System.Windows.Forms.Label();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
@@ -106,68 +106,68 @@
             this.lblPassword.TabIndex = 5;
             this.lblPassword.Text = "Password";
             // 
-            // textBox1
+            // txtName
             // 
-            this.textBox1.Location = new System.Drawing.Point(235, 106);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(181, 20);
-            this.textBox1.TabIndex = 6;
-            this.textBox1.Text = "Enter Name";
+            this.txtName.Location = new System.Drawing.Point(235, 106);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(181, 20);
+            this.txtName.TabIndex = 6;
+            this.txtName.Text = "Enter Name";
             // 
-            // textBox2
+            // txtAddress
             // 
-            this.textBox2.Location = new System.Drawing.Point(643, 109);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(181, 20);
-            this.textBox2.TabIndex = 7;
-            this.textBox2.Text = "Enter Your Address";
+            this.txtAddress.Location = new System.Drawing.Point(643, 109);
+            this.txtAddress.Multiline = true;
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(181, 20);
+            this.txtAddress.TabIndex = 7;
+            this.txtAddress.Text = "Enter Your Address";
             // 
-            // textBox3
+            // txtCnic
             // 
-            this.textBox3.Location = new System.Drawing.Point(235, 183);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(181, 20);
-            this.textBox3.TabIndex = 8;
-            this.textBox3.Text = "Enter Cnic";
+            this.txtCnic.Location = new System.Drawing.Point(235, 183);
+            this.txtCnic.Name = "txtCnic";
+            this.txtCnic.Size = new System.Drawing.Size(181, 20);
+            this.txtCnic.TabIndex = 8;
+            this.txtCnic.Text = "Enter Cnic";
             // 
-            // textBox4
+            // txtPhoneNumber
             // 
-            this.textBox4.Location = new System.Drawing.Point(643, 180);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(181, 20);
-            this.textBox4.TabIndex = 9;
-            this.textBox4.Text = "Enter Phone Number";
+            this.txtPhoneNumber.Location = new System.Drawing.Point(643, 180);
+            this.txtPhoneNumber.Name = "txtPhoneNumber";
+            this.txtPhoneNumber.Size = new System.Drawing.Size(181, 20);
+            this.txtPhoneNumber.TabIndex = 9;
+            this.txtPhoneNumber.Text = "Enter Phone Number";
             // 
-            // textBox5
+            // txtUsername
             // 
-            this.textBox5.Location = new System.Drawing.Point(235, 272);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(181, 20);
-            this.textBox5.TabIndex = 10;
-            this.textBox5.Text = "Enter Username";
+            this.txtUsername.Location = new System.Drawing.Point(235, 272);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(181, 20);
+            this.txtUsername.TabIndex = 10;
+            this.txtUsername.Text = "Enter Username";
             // 
-            // textBox6
+            // txtPassword
             // 
-            this.textBox6.Location = new System.Drawing.Point(643, 272);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.PasswordChar = '*';
-            this.textBox6.Size = new System.Drawing.Size(181, 20);
-            this.textBox6.TabIndex = 11;
+            this.txtPassword.Location = new System.Drawing.Point(643, 272);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
+            this.txtPassword.Size = new System.Drawing.Size(181, 20);
+            this.txtPassword.TabIndex = 11;
             // 
-            // comboBox1
+            // cmbRole
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmbRole.FormattingEnabled = true;
+            this.cmbRole.Items.AddRange(new object[] {
             "Admin",
             "Customer",
             "Employee",
             "Attendant"});
-            this.comboBox1.Location = new System.Drawing.Point(235, 369);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(170, 21);
-            this.comboBox1.TabIndex = 12;
-            this.comboBox1.Text = "Select Role";
+            this.cmbRole.Location = new System.Drawing.Point(235, 369);
+            this.cmbRole.Name = "cmbRole";
+            this.cmbRole.Size = new System.Drawing.Size(170, 21);
+            this.cmbRole.TabIndex = 12;
+            this.cmbRole.Text = "Select Role";
             // 
             // lblRole
             // 
@@ -189,6 +189,7 @@
             this.btnAdd.TabIndex = 14;
             this.btnAdd.Text = "ADD";
             this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnBack
             // 
@@ -205,17 +206,18 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(986, 604);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.lblRole);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.cmbRole);
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.txtUsername);
+            this.Controls.Add(this.txtPhoneNumber);
+            this.Controls.Add(this.txtCnic);
+            this.Controls.Add(this.txtAddress);
+            this.Controls.Add(this.txtName);
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.lblUsername);
             this.Controls.Add(this.lblNumber);
@@ -223,7 +225,8 @@
             this.Controls.Add(this.lblAddress);
             this.Controls.Add(this.lblName);
             this.Name = "AddUserForm";
-            this.Text = "AddUserForm";
+            this.Text = "Banking Management System";
+            this.Load += new System.EventHandler(this.AddUserForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -237,13 +240,13 @@
         private System.Windows.Forms.Label lblNumber;
         private System.Windows.Forms.Label lblUsername;
         private System.Windows.Forms.Label lblPassword;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TextBox txtAddress;
+        private System.Windows.Forms.TextBox txtCnic;
+        private System.Windows.Forms.TextBox txtPhoneNumber;
+        private System.Windows.Forms.TextBox txtUsername;
+        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.ComboBox cmbRole;
         private System.Windows.Forms.Label lblRole;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnBack;

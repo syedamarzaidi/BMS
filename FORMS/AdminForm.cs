@@ -7,7 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using BMS.DL;
+using BMS.FILES;
 namespace BMS.FORMS
 {
     public partial class AdminForm : Form
@@ -20,6 +21,21 @@ namespace BMS.FORMS
         private void button2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnUsers_Click(object sender, EventArgs e)
+        {
+            ADMIN.Users extraForm = new ADMIN.Users();
+            extraForm.ShowDialog();
+        }
+
+        private void AdminForm_Load(object sender, EventArgs e)
+        {
+          /*  if (CustomerDL.ReadData(FilePaths.CustomerData))
+            {
+                MessageBox.Show("Customer Data Loaded Successfully");
+            }
+            */
         }
     }
 }

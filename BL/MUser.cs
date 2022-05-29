@@ -11,6 +11,10 @@ namespace BMS.BL
         private string username;
         private string password;
         private string role;
+        public MUser()
+        {
+
+        }
         public MUser(string Username,string Password,string Role)
         {
             this.Username = Username;
@@ -63,6 +67,22 @@ namespace BMS.BL
         public static bool isAdmin(MUser m)
         {
             if(m.Role == "Admin")
+            {
+                return true;
+            }
+            return false;
+        }
+        public static bool isCustomer(MUser m)
+        {
+            if(m.Role == "Customer")
+            {
+                return true;
+            }
+            return false;
+        }
+        public static bool isEmployee(MUser m)
+        {
+            if(m.Role == "Employee")
             {
                 return true;
             }

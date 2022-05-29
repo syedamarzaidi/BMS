@@ -26,6 +26,7 @@ namespace BMS
             {
                 MessageBox.Show("Data Loaded Successfully");
             }
+            
             this.BackColor = Color.LightGray;
         }
 
@@ -45,8 +46,8 @@ namespace BMS
                 }
                 else if(user.Role == "Admin")
                 {
-                    // AdminForm extraForm = new AdminForm();
-                    AddUserForm extraForm = new AddUserForm();
+                     AdminForm extraForm = new AdminForm();
+                    //AddUserForm extraForm = new AddUserForm();
                     extraForm.Show();
                 }
                 else if(user.Role == "Employee")

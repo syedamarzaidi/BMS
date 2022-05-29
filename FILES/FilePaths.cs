@@ -9,5 +9,6 @@ namespace BMS.FILES
     class FilePaths
     {
         public static string MUserData = "MUserData.txt";
+        public static string CustomerData = "CustomerData.txt";
     }
 }
