@@ -56,5 +56,10 @@ namespace BMS.FORMS.ADMIN
             MUserDL.saveUserData(FilePaths.MUserData);
             dataBound();
         }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

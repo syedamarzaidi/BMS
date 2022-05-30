@@ -6,22 +6,26 @@ using System.Threading.Tasks;
 
 namespace BMS.BL
 {
-    class Customer : MUser
+    public class Customer : MUser
     {
         private string name;
         private string address;
         private string cnic;
         private string phoneNumber;
         private double customerBalance;
+        public Customer()
+        {
+
+        }
         public Customer(string Name,string Address,string Cnic,string PhoneNumber,string Username,string Password,string Role):base(Username,Password,Role)
         {
             this.Name = Name;
             this.Address = Address;
             this.Cnic = Cnic;
             this.PhoneNumber = PhoneNumber;
-            this.Username = Username;
-            this.Password = Password;
-            this.Role = Role;
+           // this.Username = Username;
+            //this.Password = Password;
+            //this.Role = Role;
             this.CustomerBalance = 0;
         }
         public string Name
@@ -87,6 +91,24 @@ namespace BMS.BL
             {
                 customerBalance = value;
             }
+        }
+        public bool AddBalance(double d)
+        {
+            if (d >= 0)
+            {
+                customerBalance = customerBalance + d;
+                return true;
+            }
+            return false;
+        }
+        public bool RemoveBalance(double d)
+        {
+            if(d >= 0 && d <= customerBalance)
+            {
+                customerBalance = customerBalance - d;
+                return true;
+            }
+            return false;
         }
     }
 }

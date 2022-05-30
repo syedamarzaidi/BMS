@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BMS.BL
 {
-    class MUser
+    public class MUser
     {
         private string username;
         private string password;

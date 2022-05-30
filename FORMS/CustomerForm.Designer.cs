@@ -30,6 +30,10 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.CustomerPanelTop = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.btnWIthdraw = new System.Windows.Forms.Button();
+            this.btnDeposit = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btnInfo = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -52,6 +56,10 @@
             // CustomerPanelTop
             // 
             this.CustomerPanelTop.BackColor = System.Drawing.Color.DarkRed;
+            this.CustomerPanelTop.Controls.Add(this.button5);
+            this.CustomerPanelTop.Controls.Add(this.button4);
+            this.CustomerPanelTop.Controls.Add(this.btnWIthdraw);
+            this.CustomerPanelTop.Controls.Add(this.btnDeposit);
             this.CustomerPanelTop.Controls.Add(this.button2);
             this.CustomerPanelTop.Controls.Add(this.btnInfo);
             this.CustomerPanelTop.Location = new System.Drawing.Point(1, 47);
@@ -59,6 +67,53 @@
             this.CustomerPanelTop.Size = new System.Drawing.Size(981, 54);
             this.CustomerPanelTop.TabIndex = 1;
             this.CustomerPanelTop.Paint += new System.Windows.Forms.PaintEventHandler(this.CustomerPanelTop_Paint);
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.DarkRed;
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Location = new System.Drawing.Point(643, 0);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(104, 54);
+            this.button5.TabIndex = 6;
+            this.button5.Text = "Loan Center";
+            this.button5.UseVisualStyleBackColor = false;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.DarkRed;
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(518, 0);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(104, 54);
+            this.button4.TabIndex = 5;
+            this.button4.Text = "Apply For Loan";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // btnWIthdraw
+            // 
+            this.btnWIthdraw.BackColor = System.Drawing.Color.DarkRed;
+            this.btnWIthdraw.ForeColor = System.Drawing.Color.White;
+            this.btnWIthdraw.Location = new System.Drawing.Point(393, 0);
+            this.btnWIthdraw.Name = "btnWIthdraw";
+            this.btnWIthdraw.Size = new System.Drawing.Size(104, 54);
+            this.btnWIthdraw.TabIndex = 4;
+            this.btnWIthdraw.Text = "Withdraw Cash";
+            this.btnWIthdraw.UseVisualStyleBackColor = false;
+            this.btnWIthdraw.Click += new System.EventHandler(this.btnWIthdraw_Click);
+            // 
+            // btnDeposit
+            // 
+            this.btnDeposit.BackColor = System.Drawing.Color.DarkRed;
+            this.btnDeposit.ForeColor = System.Drawing.Color.White;
+            this.btnDeposit.Location = new System.Drawing.Point(266, 0);
+            this.btnDeposit.Name = "btnDeposit";
+            this.btnDeposit.Size = new System.Drawing.Size(104, 54);
+            this.btnDeposit.TabIndex = 3;
+            this.btnDeposit.Text = "Deposit Cash";
+            this.btnDeposit.UseVisualStyleBackColor = false;
+            this.btnDeposit.Click += new System.EventHandler(this.btnDeposit_Click);
             // 
             // button2
             // 
@@ -116,5 +171,9 @@
         private System.Windows.Forms.Panel CustomerPanelTop;
         private System.Windows.Forms.Button btnInfo;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnWIthdraw;
+        private System.Windows.Forms.Button btnDeposit;
     }
 }

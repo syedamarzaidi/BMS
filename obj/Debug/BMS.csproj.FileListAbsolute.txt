@@ -20,3 +20,6 @@ C:\Users\kali\Desktop\BMS\BMS\obj\Debug\BMS.FORMS.AdminForm.resources
 C:\Users\kali\Desktop\BMS\BMS\obj\Debug\BMS.FORMS.CustomerForm.resources
 C:\Users\kali\Desktop\BMS\BMS\obj\Debug\BMS.FORMS.AddUserForm.resources
 C:\Users\kali\Desktop\BMS\BMS\obj\Debug\BMS.FORMS.ADMIN.Users.resources
+C:\Users\kali\Desktop\BMS\BMS\obj\Debug\BMS.FORMS.ADMIN.EditCustomer.resources
+C:\Users\kali\Desktop\BMS\BMS\obj\Debug\BMS.FORMS.CUSTOMERS.AccountInfo.resources
+C:\Users\kali\Desktop\BMS\BMS\obj\Debug\BMS.FORMS.CUSTOMERS.Balance.resources

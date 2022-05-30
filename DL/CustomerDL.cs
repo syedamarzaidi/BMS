@@ -30,9 +30,9 @@ namespace BMS.DL
         }
         static int getCustomerIdx(string Cnic)
         {
-            for(int i = 0;i < customers.Count; i++)
+            for (int i = 0; i < customers.Count; i++)
             {
-                if(Cnic == customers[i].Cnic)
+                if (Cnic == customers[i].Cnic)
                 {
                     return i;
                 }
@@ -43,9 +43,9 @@ namespace BMS.DL
         {
             string Record;
             if (File.Exists(path))
-                {
+            {
                 StreamReader file = new StreamReader(path);
-                while((Record = file.ReadLine()) != null)
+                while ((Record = file.ReadLine()) != null)
                 {
                     string[] splitedRecord = Record.Split(',');
                     string Name = splitedRecord[0];
@@ -61,19 +61,36 @@ namespace BMS.DL
                 }
                 file.Close();
                 return true;
-                }
+            }
             return false;
         }
         public static void saveData(string path)
         {
             StreamWriter file = new StreamWriter(path);
-           foreach(var c in customers)
+            foreach (var c in customers)
             {
                 file.WriteLine(c.Name + "," + c.Address + "," + c.Cnic + "," + c.PhoneNumber + "," + c.CustomerBalance + "," + c.Username + "," + c.Password + "," + c.Role);
             }
             file.Flush();
             file.Close();
         }
-
+        public static bool EditFromList(Customer previous, Customer updated)
+        {
+            foreach(var st in customers)
+            {
+                if(previous.Username == st.Username)
+                {
+                    st.Name = updated.Name;
+                    st.Address = updated.Address;
+                    st.Cnic = updated.Cnic;
+                    st.PhoneNumber = updated.PhoneNumber;
+                    st.Username = updated.Username;
+                    st.Password = updated.Password;
+                    st.Role = updated.Role;
+                    return true;
+                }
+            }
+            return false;
+        }
     }
 }
