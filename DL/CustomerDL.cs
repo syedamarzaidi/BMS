@@ -92,5 +92,18 @@ namespace BMS.DL
             }
             return false;
         }
+        public static double TotalCash()
+        {
+            double d = 0;
+            foreach(var st in customers)
+            {
+                d = d + st.CustomerBalance;
+            }
+            return d;
+        }
+        public static int getTotalCustomersCount()
+        {
+            return customers.Count;
+        }
     }
 }

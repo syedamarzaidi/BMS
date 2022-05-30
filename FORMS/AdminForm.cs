@@ -20,7 +20,8 @@ namespace BMS.FORMS
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            ADMIN.TotalCash extraForm = new ADMIN.TotalCash();
+            extraForm.ShowDialog();
         }
 
         private void btnUsers_Click(object sender, EventArgs e)

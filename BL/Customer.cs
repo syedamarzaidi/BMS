@@ -110,5 +110,13 @@ namespace BMS.BL
             }
             return false;
         }
+        public bool isLoanPossible(double loanAmmount ,double assetPrice,bool rentedHouse)
+        {
+            if(rentedHouse == false || assetPrice >= loanAmmount)
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }
