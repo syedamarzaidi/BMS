@@ -28,6 +28,17 @@ namespace BMS.DL
             }
             return false;
         }
+        public static Customer isCustomerExists(string Username)
+        {
+            foreach(var st in customers)
+            {
+                if(st.Username == Username)
+                {
+                    return st;
+                }
+            }
+            return null;
+        }
         static int getCustomerIdx(string Cnic)
         {
             for (int i = 0; i < customers.Count; i++)

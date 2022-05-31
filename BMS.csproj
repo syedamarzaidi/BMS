@@ -92,6 +92,24 @@
     <Compile Include="FORMS\ADMIN\Users.Designer.cs">
       <DependentUpon>Users.cs</DependentUpon>
     </Compile>
+    <Compile Include="FORMS\ATTENDANT\FillAttendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\ATTENDANT\FillAttendance.Designer.cs">
+      <DependentUpon>FillAttendance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\ATTENDANT\ShowAttendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\ATTENDANT\ShowAttendance.Designer.cs">
+      <DependentUpon>ShowAttendance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\ATTENDANT\TakeAttendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\ATTENDANT\TakeAttendance.Designer.cs">
+      <DependentUpon>TakeAttendance.cs</DependentUpon>
+    </Compile>
     <Compile Include="FORMS\CustomerForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -148,6 +166,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FORMS\ADMIN\Users.resx">
       <DependentUpon>Users.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\ATTENDANT\FillAttendance.resx">
+      <DependentUpon>FillAttendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\ATTENDANT\ShowAttendance.resx">
+      <DependentUpon>ShowAttendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\ATTENDANT\TakeAttendance.resx">
+      <DependentUpon>TakeAttendance.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FORMS\CustomerForm.resx">
       <DependentUpon>CustomerForm.cs</DependentUpon>

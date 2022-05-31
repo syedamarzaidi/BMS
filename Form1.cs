@@ -26,7 +26,10 @@ namespace BMS
             {
                 MessageBox.Show("Data Loaded Successfully");
             }
-            
+            if (CustomerDL.ReadData(FilePaths.CustomerData))
+            {
+                MessageBox.Show("Data Loaded Successfully");
+            }
             this.BackColor = Color.LightGray;
         }
 
@@ -39,20 +42,22 @@ namespace BMS
             if (user != null)
             {
                 this.Hide();
-                if (user.Role == "Customer")
+                if (user.isCustomer())
                 {
-                    CustomerForm extraForm = new CustomerForm();
+                    Customer c = CustomerDL.isCustomerExists(Username);
+                    CustomerForm extraForm = new CustomerForm(c);
                     extraForm.Show();
                 }
-                else if(user.Role == "Admin")
+                if(user.isAdmin())
                 {
                      AdminForm extraForm = new AdminForm();
                     //AddUserForm extraForm = new AddUserForm();
                     extraForm.Show();
                 }
-                else if(user.Role == "Employee")
+                if(user.isAttendant())
                 {
-
+                    FORMS.ATTENDANT.TakeAttendance extraForm = new FORMS.ATTENDANT.TakeAttendance();
+                    extraForm.Show();
                 }
             }
         }

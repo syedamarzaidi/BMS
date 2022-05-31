@@ -34,7 +34,7 @@ namespace BMS.FORMS.CUSTOMERS
             double loanAmount = double.Parse(txtLoanAmount.Text);
             double assetPrice = double.Parse(txtAssetPrice.Text);
             bool status = rbtnYes.Checked;
-            if (customer.isLoanPossible(loanAmount, assetPrice, status)
+            if (customer.isLoanPossible(loanAmount, assetPrice, status))
                 {
 
             }

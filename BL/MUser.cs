@@ -64,27 +64,35 @@ namespace BMS.BL
                 role = value;
             }
         }
-        public static bool isAdmin(MUser m)
+        public bool isAdmin()
         {
-            if(m.Role == "Admin")
+            if(this.Role == "Admin")
             {
                 return true;
             }
             return false;
         }
-        public static bool isCustomer(MUser m)
+        public bool isCustomer()
         {
-            if(m.Role == "Customer")
+            if(this.Role == "Customer")
             {
                 return true;
             }
             return false;
         }
-        public static bool isEmployee(MUser m)
+        public bool isAttendant()
         {
-            if(m.Role == "Employee")
+            if(this.Role == "Attendant")
             {
                 return true;
+            }
+            return false;
+        }
+        public bool isManager()
+        {
+            if(this.Role == "Manager")
+            {
+                return true; 
             }
             return false;
         }

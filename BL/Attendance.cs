@@ -9,12 +9,14 @@ namespace BMS.BL
     class Attendance
     {
         private string name;
+        private int totalDays;
         private int totalPresent;
         private int totalAbsent;
         private string Month;
-        public Attendance(string name,int totalPresent,int totalAbsent,string Month)
+        public Attendance(string name,int totalDays,int totalPresent,int totalAbsent,string Month)
         {
             this.name = name;
+            this.TotalDays = totalDays;
             this.totalPresent = totalPresent;
             this.TotalAbsent = totalAbsent;
             this.Month = Month;
@@ -69,6 +71,19 @@ namespace BMS.BL
             set
             {
                 Month = value;
+            }
+        }
+
+        public int TotalDays
+        {
+            get
+            {
+                return totalDays;
+            }
+
+            set
+            {
+                totalDays = value;
             }
         }
     }

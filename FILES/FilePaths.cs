@@ -10,5 +10,6 @@ namespace BMS.FILES
     {
         public static string MUserData = "MUserData.txt";
         public static string CustomerData = "CustomerData.txt";
+        public static string AttendanceData = "AttendanceData.txt";
     }
 }

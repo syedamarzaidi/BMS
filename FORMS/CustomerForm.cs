@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BMS.BL;
+using BMS.DL;
 namespace BMS.FORMS
 {
     public partial class CustomerForm : Form
@@ -65,5 +66,6 @@ namespace BMS.FORMS
             Form1 extraForm = new Form1();
             extraForm.Show();
         }
+
     }
 }

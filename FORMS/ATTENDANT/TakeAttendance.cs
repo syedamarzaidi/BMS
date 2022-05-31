@@ -19,7 +19,29 @@ namespace BMS.FORMS.ATTENDANT
 
         private void TakeAttendance_Load(object sender, EventArgs e)
         {
-            
+            if (AttendanceDL.loadAttendance(FILES.FilePaths.AttendanceData))
+            {
+                MessageBox.Show("Data Loaded Successfully");
+            }
+        }
+
+        private void btnAttendance_Click(object sender, EventArgs e)
+        {
+            FillAttendance extraForm = new FillAttendance(cmbSelect.Text);
+            extraForm.ShowDialog();
+        }
+
+        private void btnShow_Click(object sender, EventArgs e)
+        {
+            ShowAttendance extraForm = new ShowAttendance();
+            extraForm.ShowDialog();
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Form1 extraForm = new Form1();
+            extraForm.Show();
         }
     }
 }

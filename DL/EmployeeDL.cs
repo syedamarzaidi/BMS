@@ -79,7 +79,7 @@ namespace BMS.DL
             }
             return false;
         }
-        public bool LoadData(string path)
+       /* public bool (string path)
         {
             string record;
             if (File.Exists(path))
@@ -91,6 +91,6 @@ namespace BMS.DL
 
                 }
             }
-        }
+        }*/
     }
 }

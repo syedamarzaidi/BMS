@@ -32,11 +32,11 @@ namespace BMS.FORMS
 
         private void AdminForm_Load(object sender, EventArgs e)
         {
-          /*  if (CustomerDL.ReadData(FilePaths.CustomerData))
+           if (CustomerDL.ReadData(FilePaths.CustomerData))
             {
                 MessageBox.Show("Customer Data Loaded Successfully");
             }
-            */
+            
         }
 
         private void btnAttendance_Click(object sender, EventArgs e)
@@ -50,6 +50,11 @@ namespace BMS.FORMS
             this.Close();
             Form1 extraForm = new Form1();
             extraForm.Show();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

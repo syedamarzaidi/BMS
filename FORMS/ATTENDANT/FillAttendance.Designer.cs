@@ -30,13 +30,14 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnFillAttendance = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.btnClose = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -56,17 +57,17 @@
             this.textBox1.TabIndex = 1;
             this.textBox1.Text = "Enter Days";
             // 
-            // button1
+            // btnFillAttendance
             // 
-            this.button1.BackColor = System.Drawing.Color.DarkRed;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(281, 285);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 46);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Enter";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnFillAttendance.BackColor = System.Drawing.Color.DarkRed;
+            this.btnFillAttendance.ForeColor = System.Drawing.Color.White;
+            this.btnFillAttendance.Location = new System.Drawing.Point(281, 285);
+            this.btnFillAttendance.Name = "btnFillAttendance";
+            this.btnFillAttendance.Size = new System.Drawing.Size(75, 46);
+            this.btnFillAttendance.TabIndex = 2;
+            this.btnFillAttendance.Text = "Enter";
+            this.btnFillAttendance.UseVisualStyleBackColor = false;
+            this.btnFillAttendance.Click += new System.EventHandler(this.btnFillAttendance_Click_1);
             // 
             // textBox2
             // 
@@ -133,19 +134,32 @@
             this.comboBox1.TabIndex = 9;
             this.comboBox1.Text = "Select Month";
             // 
+            // btnClose
+            // 
+            this.btnClose.BackColor = System.Drawing.Color.DarkRed;
+            this.btnClose.ForeColor = System.Drawing.Color.White;
+            this.btnClose.Location = new System.Drawing.Point(78, 285);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(75, 46);
+            this.btnClose.TabIndex = 10;
+            this.btnClose.Text = "Close";
+            this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
             // FillAttendance
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(381, 343);
+            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnFillAttendance);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Name = "FillAttendance";
@@ -160,12 +174,13 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnFillAttendance;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button btnClose;
     }
 }
