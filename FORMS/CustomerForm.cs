@@ -58,5 +58,12 @@ namespace BMS.FORMS
         {
 
         }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Form1 extraForm = new Form1();
+            extraForm.Show();
+        }
     }
 }

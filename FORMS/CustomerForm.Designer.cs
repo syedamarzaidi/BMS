@@ -37,6 +37,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.btnInfo = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnLogout = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.CustomerPanelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -56,6 +57,7 @@
             // CustomerPanelTop
             // 
             this.CustomerPanelTop.BackColor = System.Drawing.Color.DarkRed;
+            this.CustomerPanelTop.Controls.Add(this.btnLogout);
             this.CustomerPanelTop.Controls.Add(this.button5);
             this.CustomerPanelTop.Controls.Add(this.button4);
             this.CustomerPanelTop.Controls.Add(this.btnWIthdraw);
@@ -148,6 +150,18 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // btnLogout
+            // 
+            this.btnLogout.BackColor = System.Drawing.Color.DarkRed;
+            this.btnLogout.ForeColor = System.Drawing.Color.White;
+            this.btnLogout.Location = new System.Drawing.Point(840, 0);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(104, 54);
+            this.btnLogout.TabIndex = 7;
+            this.btnLogout.Text = "Logout";
+            this.btnLogout.UseVisualStyleBackColor = false;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            // 
             // CustomerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -175,5 +189,6 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button btnWIthdraw;
         private System.Windows.Forms.Button btnDeposit;
+        private System.Windows.Forms.Button btnLogout;
     }
 }

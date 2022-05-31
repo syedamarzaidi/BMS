@@ -30,10 +30,11 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnAttendance = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btnUsers = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnLogout = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -52,7 +53,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.DarkRed;
-            this.panel2.Controls.Add(this.button3);
+            this.panel2.Controls.Add(this.btnLogout);
+            this.panel2.Controls.Add(this.btnAttendance);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.btnUsers);
             this.panel2.Location = new System.Drawing.Point(3, 52);
@@ -60,14 +62,18 @@
             this.panel2.Size = new System.Drawing.Size(981, 53);
             this.panel2.TabIndex = 1;
             // 
-            // button3
+            // btnAttendance
             // 
-            this.button3.Location = new System.Drawing.Point(369, 19);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnAttendance.BackColor = System.Drawing.Color.DarkRed;
+            this.btnAttendance.ForeColor = System.Drawing.Color.White;
+            this.btnAttendance.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnAttendance.Location = new System.Drawing.Point(347, 0);
+            this.btnAttendance.Name = "btnAttendance";
+            this.btnAttendance.Size = new System.Drawing.Size(166, 53);
+            this.btnAttendance.TabIndex = 2;
+            this.btnAttendance.Text = "Check Employees Attendance";
+            this.btnAttendance.UseVisualStyleBackColor = false;
+            this.btnAttendance.Click += new System.EventHandler(this.btnAttendance_Click);
             // 
             // button2
             // 
@@ -78,7 +84,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(103, 53);
             this.button2.TabIndex = 1;
-            this.button2.Text = "Reports";
+            this.button2.Text = "Total Cash";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -103,6 +109,19 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // btnLogout
+            // 
+            this.btnLogout.BackColor = System.Drawing.Color.DarkRed;
+            this.btnLogout.ForeColor = System.Drawing.Color.White;
+            this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnLogout.Location = new System.Drawing.Point(856, 0);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(103, 53);
+            this.btnLogout.TabIndex = 3;
+            this.btnLogout.Text = "Logout";
+            this.btnLogout.UseVisualStyleBackColor = false;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            // 
             // AdminForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -124,8 +143,9 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnUsers;
+        private System.Windows.Forms.Button btnAttendance;
+        private System.Windows.Forms.Button btnLogout;
     }
 }

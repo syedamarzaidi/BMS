@@ -38,5 +38,18 @@ namespace BMS.FORMS
             }
             */
         }
+
+        private void btnAttendance_Click(object sender, EventArgs e)
+        {
+            ATTENDANT.ShowAttendance extraForm = new ATTENDANT.ShowAttendance();
+            extraForm.ShowDialog();
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Form1 extraForm = new Form1();
+            extraForm.Show();
+        }
     }
 }

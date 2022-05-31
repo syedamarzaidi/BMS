@@ -161,13 +161,14 @@
             this.cmbRole.Items.AddRange(new object[] {
             "Admin",
             "Customer",
-            "Employee",
-            "Attendant"});
+            "Attendant",
+            "Manager"});
             this.cmbRole.Location = new System.Drawing.Point(235, 369);
             this.cmbRole.Name = "cmbRole";
             this.cmbRole.Size = new System.Drawing.Size(170, 21);
             this.cmbRole.TabIndex = 12;
             this.cmbRole.Text = "Select Role";
+           // this.cmbRole.SelectedIndexChanged += new System.EventHandler(this.cmbRole_SelectedIndexChanged);
             // 
             // lblRole
             // 

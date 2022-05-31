@@ -23,3 +23,7 @@ C:\Users\kali\Desktop\BMS\BMS\obj\Debug\BMS.FORMS.ADMIN.Users.resources
 C:\Users\kali\Desktop\BMS\BMS\obj\Debug\BMS.FORMS.ADMIN.EditCustomer.resources
 C:\Users\kali\Desktop\BMS\BMS\obj\Debug\BMS.FORMS.CUSTOMERS.AccountInfo.resources
 C:\Users\kali\Desktop\BMS\BMS\obj\Debug\BMS.FORMS.CUSTOMERS.Balance.resources
+C:\Users\kali\Desktop\BMS\BMS\obj\Debug\BMS.FORMS.ADMIN.TotalCash.resources
+C:\Users\kali\Desktop\BMS\BMS\obj\Debug\BMS.FORMS.CUSTOMERS.ApplyForLoan.resources
+C:\Users\kali\Desktop\BMS\BMS\obj\Debug\BMS.FORMS.CUSTOMERS.Deposit.resources
+C:\Users\kali\Desktop\BMS\BMS\obj\Debug\BMS.FORMS.CUSTOMERS.Withdraw.resources

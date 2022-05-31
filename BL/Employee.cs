@@ -13,6 +13,19 @@ namespace BMS.BL
         protected string cnic;
         protected string designation;
         protected string phoneNumber;
+        public Employee()
+        {
+
+        }
+        public Employee(string name,string address,string cnic,string designation,string phoneNumber)
+        {
+            this.Name = name;
+            this.Address = address;
+            this.cnic = cnic;
+            this.designation = designation;
+            this.phoneNumber = phoneNumber;
+        }
+        private char isPresent;
 
         public string Name
         {
@@ -76,6 +89,19 @@ namespace BMS.BL
             set
             {
                 phoneNumber = value;
+            }
+        }
+
+        public char IsPresent
+        {
+            get
+            {
+                return isPresent;
+            }
+
+            set
+            {
+                isPresent = value;
             }
         }
     }
