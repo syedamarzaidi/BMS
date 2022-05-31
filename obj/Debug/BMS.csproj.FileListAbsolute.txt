@@ -30,3 +30,5 @@ C:\Users\kali\Desktop\BMS\BMS\obj\Debug\BMS.FORMS.CUSTOMERS.Withdraw.resources
 C:\Users\kali\Desktop\BMS\BMS\obj\Debug\BMS.FORMS.ATTENDANT.FillAttendance.resources
 C:\Users\kali\Desktop\BMS\BMS\obj\Debug\BMS.FORMS.ATTENDANT.ShowAttendance.resources
 C:\Users\kali\Desktop\BMS\BMS\obj\Debug\BMS.FORMS.ATTENDANT.TakeAttendance.resources
+C:\Users\kali\Desktop\BMS\BMS\obj\Debug\BMS.FORMS.CUSTOMERS.LoanCenter.resources
+C:\Users\kali\Desktop\BMS\BMS\obj\Debug\BMS.FORMS.CUSTOMERS.LoanForm.resources

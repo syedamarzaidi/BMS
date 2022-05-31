@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BMS.BL;
+using BMS.DL;
 namespace BMS.FORMS.CUSTOMERS
 {
     public partial class Deposit : Form
@@ -26,7 +27,7 @@ namespace BMS.FORMS.CUSTOMERS
 
         private void btnDeposit_Click(object sender, EventArgs e)
         { 
-            double Amount = double.Parse(lblBalance.Text);
+            double Amount = double.Parse(textBox1.Text);
             if (customer.AddBalance(Amount))
             {
                 MessageBox.Show("Cash Deposited Successfully");
@@ -35,6 +36,8 @@ namespace BMS.FORMS.CUSTOMERS
             {
                 MessageBox.Show("A Error Occured While Processing ");
             }
+            CustomerDL.saveData(FILES.FilePaths.CustomerData);
+            this.Close();
         }
 
         private void label2_Click(object sender, EventArgs e)

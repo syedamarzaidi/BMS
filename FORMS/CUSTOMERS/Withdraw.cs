@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BMS.BL;
+using BMS.DL;
 namespace BMS.FORMS.CUSTOMERS
 {
     public partial class Withdraw : Form
@@ -26,15 +27,17 @@ namespace BMS.FORMS.CUSTOMERS
 
         private void btnWithdraw_Click(object sender, EventArgs e)
         {
-            double Amount = double.Parse(lblBalance.Text);
+            double Amount = double.Parse(textBox1.Text);
             if (customer.RemoveBalance(Amount))
             {
-                MessageBox.Show("Cash Deposited Successfully");
+                MessageBox.Show("Cash Withdrawn Successfully");
             }
             else
             {
                 MessageBox.Show("A Error Occured While Processing ");
             }
+            CustomerDL.saveData(FILES.FilePaths.CustomerData);
+            this.Close();
         }
     }
 }

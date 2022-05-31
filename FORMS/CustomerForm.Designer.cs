@@ -30,14 +30,14 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.CustomerPanelTop = new System.Windows.Forms.Panel();
+            this.btnLogout = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnLoanApply = new System.Windows.Forms.Button();
             this.btnWIthdraw = new System.Windows.Forms.Button();
             this.btnDeposit = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btnInfo = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnLogout = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.CustomerPanelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -59,7 +59,7 @@
             this.CustomerPanelTop.BackColor = System.Drawing.Color.DarkRed;
             this.CustomerPanelTop.Controls.Add(this.btnLogout);
             this.CustomerPanelTop.Controls.Add(this.button5);
-            this.CustomerPanelTop.Controls.Add(this.button4);
+            this.CustomerPanelTop.Controls.Add(this.btnLoanApply);
             this.CustomerPanelTop.Controls.Add(this.btnWIthdraw);
             this.CustomerPanelTop.Controls.Add(this.btnDeposit);
             this.CustomerPanelTop.Controls.Add(this.button2);
@@ -69,6 +69,18 @@
             this.CustomerPanelTop.Size = new System.Drawing.Size(981, 54);
             this.CustomerPanelTop.TabIndex = 1;
             this.CustomerPanelTop.Paint += new System.Windows.Forms.PaintEventHandler(this.CustomerPanelTop_Paint);
+            // 
+            // btnLogout
+            // 
+            this.btnLogout.BackColor = System.Drawing.Color.DarkRed;
+            this.btnLogout.ForeColor = System.Drawing.Color.White;
+            this.btnLogout.Location = new System.Drawing.Point(840, 0);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(104, 54);
+            this.btnLogout.TabIndex = 7;
+            this.btnLogout.Text = "Logout";
+            this.btnLogout.UseVisualStyleBackColor = false;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // button5
             // 
@@ -81,17 +93,17 @@
             this.button5.Text = "Loan Center";
             this.button5.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // btnLoanApply
             // 
-            this.button4.BackColor = System.Drawing.Color.DarkRed;
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(518, 0);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(104, 54);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "Apply For Loan";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btnLoanApply.BackColor = System.Drawing.Color.DarkRed;
+            this.btnLoanApply.ForeColor = System.Drawing.Color.White;
+            this.btnLoanApply.Location = new System.Drawing.Point(518, 0);
+            this.btnLoanApply.Name = "btnLoanApply";
+            this.btnLoanApply.Size = new System.Drawing.Size(104, 54);
+            this.btnLoanApply.TabIndex = 5;
+            this.btnLoanApply.Text = "Apply For Loan";
+            this.btnLoanApply.UseVisualStyleBackColor = false;
+            this.btnLoanApply.Click += new System.EventHandler(this.btnLoanApply_Click);
             // 
             // btnWIthdraw
             // 
@@ -150,18 +162,6 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // btnLogout
-            // 
-            this.btnLogout.BackColor = System.Drawing.Color.DarkRed;
-            this.btnLogout.ForeColor = System.Drawing.Color.White;
-            this.btnLogout.Location = new System.Drawing.Point(840, 0);
-            this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(104, 54);
-            this.btnLogout.TabIndex = 7;
-            this.btnLogout.Text = "Logout";
-            this.btnLogout.UseVisualStyleBackColor = false;
-            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
-            // 
             // CustomerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -186,7 +186,7 @@
         private System.Windows.Forms.Button btnInfo;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnLoanApply;
         private System.Windows.Forms.Button btnWIthdraw;
         private System.Windows.Forms.Button btnDeposit;
         private System.Windows.Forms.Button btnLogout;

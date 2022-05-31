@@ -55,10 +55,6 @@ namespace BMS.FORMS
             extraForm.ShowDialog();
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
@@ -67,5 +63,9 @@ namespace BMS.FORMS
             extraForm.Show();
         }
 
+        private void btnLoanApply_Click(object sender, EventArgs e)
+        {
+            CUSTOMERS.ApplyForLoan extraForm = new CUSTOMERS.ApplyForLoan(customer);
+        }
     }
 }

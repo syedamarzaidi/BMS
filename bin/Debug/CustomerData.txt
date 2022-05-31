@@ -1,1 +1,1 @@
-Ammar,Shalimar,352012154,0301212,100000,user2,123,Customer
+ammar,shalimar,3235301212,031212,4000,user2,123,Customer

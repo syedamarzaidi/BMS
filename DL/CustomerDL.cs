@@ -63,11 +63,15 @@ namespace BMS.DL
                     string Address = splitedRecord[1];
                     string Cnic = splitedRecord[2];
                     string PhoneNumber = splitedRecord[3];
-                    string CustomerBalance = splitedRecord[4];
+                    float CustomerBalance = float.Parse(splitedRecord[4]);
                     string Username = splitedRecord[5];
                     string Password = splitedRecord[6];
                     string Role = splitedRecord[7];
-                    Customer c = new Customer(Name, Address, Cnic, PhoneNumber, Username, Password, Role);
+                    string loanTakenStatus = splitedRecord[8];
+                    double loanAmount = double.Parse(splitedRecord[9]);
+                    double loanInstallment = double.Parse(splitedRecord[10]);
+                    int loanDuration = int.Parse(splitedRecord[11]);
+                    Customer c = new Customer(Name, Address, Cnic, PhoneNumber,CustomerBalance, Username, Password, Role,loanTakenStatus,loanAmount,loanInstallment,loanDuration);
                     customers.Add(c);
                 }
                 file.Close();
@@ -80,7 +84,7 @@ namespace BMS.DL
             StreamWriter file = new StreamWriter(path);
             foreach (var c in customers)
             {
-                file.WriteLine(c.Name + "," + c.Address + "," + c.Cnic + "," + c.PhoneNumber + "," + c.CustomerBalance + "," + c.Username + "," + c.Password + "," + c.Role);
+                file.WriteLine(c.Name + "," + c.Address + "," + c.Cnic + "," + c.PhoneNumber + "," + c.CustomerBalance + "," + c.Username + "," + c.Password + "," + c.Role + "," + c.LoanTakenStatus1 + "," + c.LoanAmount + "," + c.LoanInstallment + "," + c.LoanDuration);
             }
             file.Flush();
             file.Close();

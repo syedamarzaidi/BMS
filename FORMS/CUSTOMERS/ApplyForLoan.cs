@@ -36,7 +36,8 @@ namespace BMS.FORMS.CUSTOMERS
             bool status = rbtnYes.Checked;
             if (customer.isLoanPossible(loanAmount, assetPrice, status))
                 {
-
+                LoanForm extraForm = new LoanForm(customer, loanAmount);
+                extraForm.ShowDialog();
             }
         }
     }
