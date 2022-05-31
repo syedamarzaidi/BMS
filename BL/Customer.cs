@@ -17,6 +17,7 @@ namespace BMS.BL
         private double loanAmount;
         private double loanInstallment;
         private int loanDuration; // In months
+        private double remainingLoan;
         private bool isHouseRented;
         public Customer()
         {
@@ -30,6 +31,13 @@ namespace BMS.BL
             this.PhoneNumber = PhoneNumber;
             this.CustomerBalance = 0;
             this.LoanTakenStatus = "NOT TAKEN";
+        }
+        public Customer(string Name, string Address, string Cnic, string PhoneNumber, string Username, string Password) : base(Username, Password)
+        {
+            this.Name = Name;
+            this.Address = Address;
+            this.Cnic = Cnic;
+            this.PhoneNumber = PhoneNumber;
         }
         public Customer(string Name, string Address, string Cnic, string PhoneNumber, double customerBalance,string Username, string Password, string Role) : base(Username, Password, Role)
         {
@@ -52,6 +60,18 @@ namespace BMS.BL
             this.loanInstallment = loanInstallment;
             this.LoanDuration = loanDuration;
             this.IsHouseRented = isHouseRented;
+        }
+        public Customer(string Name, string Address, string Cnic, string PhoneNumber, double customerBalance, string Username, string Password, string Role, string loanTakenStatus, double loanAmount, double loanInstallment, int loanDuration) : base(Username, Password, Role)
+        {
+            this.Name = Name;
+            this.Address = Address;
+            this.Cnic = Cnic;
+            this.PhoneNumber = PhoneNumber;
+            this.CustomerBalance = customerBalance;
+            this.LoanTakenStatus = loanTakenStatus;
+            this.loanAmount = loanAmount;
+            this.loanInstallment = loanInstallment;
+            this.LoanDuration = loanDuration;
         }
         public string Name
         {
@@ -183,6 +203,19 @@ namespace BMS.BL
             }
         }
 
+        public double RemainingLoan
+        {
+            get
+            {
+                return remainingLoan;
+            }
+
+            set
+            {
+                remainingLoan = value;
+            }
+        }
+
         public bool AddBalance(double d)
         {
             if (d >= 0)
@@ -218,9 +251,9 @@ namespace BMS.BL
         {
             if (this.loanAmount > 0)
             {
-                if (LoanInstallment <= loanAmount && customerBalance >= LoanInstallment)
+                if (LoanInstallment <= remainingLoan && customerBalance >= LoanInstallment)
                 {
-                    loanAmount = loanAmount - LoanInstallment;
+                    RemainingLoan = remainingLoan - LoanInstallment;
                     customerBalance = customerBalance - LoanInstallment;
                     return true;
                 }

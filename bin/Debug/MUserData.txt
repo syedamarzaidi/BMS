@@ -1,4 +1,4 @@
 admin,password,Admin
 user,123,Attendant
+use,123,Customer
 user1,123,Manager
-user2,123,Customer

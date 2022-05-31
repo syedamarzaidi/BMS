@@ -68,6 +68,7 @@
             this.btnAdd.TabIndex = 30;
             this.btnAdd.Text = "Edit";
             this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // lblRole
             // 
@@ -225,6 +226,7 @@
             this.Controls.Add(this.lblName);
             this.Name = "EditCustomer";
             this.Text = "EditCustomer";
+            this.Load += new System.EventHandler(this.EditCustomer_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

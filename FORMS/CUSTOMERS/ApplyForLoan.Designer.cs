@@ -53,8 +53,9 @@
             // 
             this.txtLoanAmount.Location = new System.Drawing.Point(276, 107);
             this.txtLoanAmount.Name = "txtLoanAmount";
-            this.txtLoanAmount.Size = new System.Drawing.Size(123, 20);
+            this.txtLoanAmount.Size = new System.Drawing.Size(150, 20);
             this.txtLoanAmount.TabIndex = 1;
+            this.txtLoanAmount.Text = "Enter Loan Amount";
             // 
             // label2
             // 
@@ -62,9 +63,9 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(121, 202);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(97, 16);
+            this.label2.Size = new System.Drawing.Size(87, 16);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Loan Amount";
+            this.label2.Text = "Asset Price";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
@@ -81,8 +82,9 @@
             // 
             this.txtAssetPrice.Location = new System.Drawing.Point(276, 202);
             this.txtAssetPrice.Name = "txtAssetPrice";
-            this.txtAssetPrice.Size = new System.Drawing.Size(123, 20);
+            this.txtAssetPrice.Size = new System.Drawing.Size(150, 20);
             this.txtAssetPrice.TabIndex = 4;
+            this.txtAssetPrice.Text = "Enter Your Assset Worth";
             // 
             // rbtnYes
             // 
@@ -126,8 +128,9 @@
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(75, 40);
             this.btnClose.TabIndex = 8;
-            this.btnClose.Text = "Close";
+            this.btnClose.Text = "Back";
             this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // ApplyForLoan
             // 

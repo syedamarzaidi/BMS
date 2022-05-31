@@ -35,7 +35,7 @@
             this.lblAmount = new System.Windows.Forms.Label();
             this.lblInstallment = new System.Windows.Forms.Label();
             this.lblPlan = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.lblRemaining = new System.Windows.Forms.Label();
             this.btnPay = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -110,15 +110,15 @@
             this.lblPlan.TabIndex = 6;
             this.lblPlan.Text = "**********";
             // 
-            // label8
+            // lblRemaining
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(217, 266);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(99, 16);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "lblRemaining";
+            this.lblRemaining.AutoSize = true;
+            this.lblRemaining.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRemaining.Location = new System.Drawing.Point(217, 266);
+            this.lblRemaining.Name = "lblRemaining";
+            this.lblRemaining.Size = new System.Drawing.Size(74, 16);
+            this.lblRemaining.TabIndex = 7;
+            this.lblRemaining.Text = "***********";
             // 
             // btnPay
             // 
@@ -152,7 +152,7 @@
             this.ClientSize = new System.Drawing.Size(422, 447);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnPay);
-            this.Controls.Add(this.label8);
+            this.Controls.Add(this.lblRemaining);
             this.Controls.Add(this.lblPlan);
             this.Controls.Add(this.lblInstallment);
             this.Controls.Add(this.lblAmount);
@@ -177,7 +177,7 @@
         private System.Windows.Forms.Label lblAmount;
         private System.Windows.Forms.Label lblInstallment;
         private System.Windows.Forms.Label lblPlan;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblRemaining;
         private System.Windows.Forms.Button btnPay;
         private System.Windows.Forms.Button btnBack;
     }

@@ -14,6 +14,14 @@ namespace BMS.DL
         {
             return customers;
         }
+        public static bool isListEmpty()
+        {
+            if(customers.Count == 0)
+            {
+                return true;
+            }
+            return false;
+        }
         public static void addIntoList(Customer c)
         {
             customers.Add(c);
@@ -69,8 +77,9 @@ namespace BMS.DL
                     string Role = splitedRecord[7];
                     string loanTakenStatus = splitedRecord[8];
                     double loanAmount = double.Parse(splitedRecord[9]);
-                    double loanInstallment = double.Parse(splitedRecord[10]);
-                    int loanDuration = int.Parse(splitedRecord[11]);
+                    double remainingLoan = double.Parse(splitedRecord[10]);
+                    double loanInstallment = double.Parse(splitedRecord[11]);
+                    int loanDuration = int.Parse(splitedRecord[12]);
                     Customer c = new Customer(Name, Address, Cnic, PhoneNumber,CustomerBalance, Username, Password, Role,loanTakenStatus,loanAmount,loanInstallment,loanDuration);
                     customers.Add(c);
                 }
@@ -84,7 +93,7 @@ namespace BMS.DL
             StreamWriter file = new StreamWriter(path);
             foreach (var c in customers)
             {
-                file.WriteLine(c.Name + "," + c.Address + "," + c.Cnic + "," + c.PhoneNumber + "," + c.CustomerBalance + "," + c.Username + "," + c.Password + "," + c.Role + "," + c.LoanTakenStatus1 + "," + c.LoanAmount + "," + c.LoanInstallment + "," + c.LoanDuration);
+                file.WriteLine(c.Name + "," + c.Address + "," + c.Cnic + "," + c.PhoneNumber + "," + c.CustomerBalance + "," + c.Username + "," + c.Password + "," + c.Role + "," + c.LoanTakenStatus1 + "," + c.LoanAmount + "," + c.RemainingLoan+","+ c.LoanInstallment + "," + c.LoanDuration);
             }
             file.Flush();
             file.Close();
@@ -101,7 +110,6 @@ namespace BMS.DL
                     st.PhoneNumber = updated.PhoneNumber;
                     st.Username = updated.Username;
                     st.Password = updated.Password;
-                    st.Role = updated.Role;
                     return true;
                 }
             }

@@ -38,7 +38,13 @@ namespace BMS.FORMS.CUSTOMERS
                 {
                 LoanForm extraForm = new LoanForm(customer, loanAmount);
                 extraForm.ShowDialog();
+                this.Close();
             }
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

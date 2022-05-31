@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BMS.BL;
+using BMS.DL;
 namespace BMS.FORMS.CUSTOMERS
 {
     public partial class LoanForm : Form
@@ -24,13 +25,16 @@ namespace BMS.FORMS.CUSTOMERS
         private void btnDone_Click(object sender, EventArgs e)
         {
             int months = int.Parse(cmbPlan.Text);
-            double installment = Customer.calculateInstallment(months, customer.LoanAmount);
+            double installment = Customer.calculateInstallment(months, loanAmount);
             if (installment >= 0)
             {
                 customer.LoanAmount = loanAmount;
                 customer.LoanDuration = months;
                 customer.LoanTakenStatus1 = "TAKEN";
                 customer.LoanInstallment = installment;
+                customer.RemainingLoan = loanAmount;
+                customer.AddBalance(loanAmount);
+                CustomerDL.saveData(FILES.FilePaths.CustomerData);
                 this.Close();
             }
         }

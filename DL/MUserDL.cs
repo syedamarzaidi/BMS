@@ -22,6 +22,14 @@ namespace BMS.DL
                 users.RemoveAt(userIdx);
             }
         }
+        public static bool isListEmpty()
+        {
+            if(users.Count == 0)
+            {
+                return true;
+            }
+            return false;
+        }
         static int getUserIdx(string Username)
         {
             for (int i = 0; i < users.Count; i++)
@@ -73,6 +81,17 @@ namespace BMS.DL
                 return true;
             }
             return false;
+        }
+        public static void EditFromList(MUser previous, MUser Updated)
+        {
+            foreach (var st in users)
+            {
+                if (st.Username == previous.Username && st.Password == previous.Password)
+                {
+                    st.Username = Updated.Username;
+                    st.Password = Updated.Password;
+                }
+            }
         }
     }
 }

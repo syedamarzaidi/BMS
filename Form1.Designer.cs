@@ -103,6 +103,7 @@
             this.button2.TabIndex = 7;
             this.button2.Text = "Reset Password";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Visible = false;
             // 
             // pictureBox1
             // 

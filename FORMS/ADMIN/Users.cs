@@ -21,10 +21,6 @@ namespace BMS.FORMS.ADMIN
 
         private void Users_Load(object sender, EventArgs e)
         {
-            if (CustomerDL.ReadData(FilePaths.CustomerData))
-            {
-                MessageBox.Show("Data Loaded Successfully");
-            }
             dataBound();
         }
         public void dataBound()
@@ -59,7 +55,9 @@ namespace BMS.FORMS.ADMIN
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-
+            Customer user = (Customer)gvUsers.CurrentRow.DataBoundItem;
+            EditCustomer extraForm = new EditCustomer(user);
+            extraForm.ShowDialog();
         }
     }
 }

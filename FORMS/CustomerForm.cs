@@ -23,6 +23,10 @@ namespace BMS.FORMS
         private void CustomerForm_Load(object sender, EventArgs e)
         {
             CustomerPanelTop.BackColor = Color.IndianRed;
+            if(customer.LoanTakenStatus1 == "TAKEN")
+            {
+                btnCenter.Visible = true;
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -66,6 +70,24 @@ namespace BMS.FORMS
         private void btnLoanApply_Click(object sender, EventArgs e)
         {
             CUSTOMERS.ApplyForLoan extraForm = new CUSTOMERS.ApplyForLoan(customer);
+            extraForm.ShowDialog();
+            if(customer.LoanTakenStatus1 == "TAKEN")
+            {
+                btnCenter.Visible = true;
+            }
+            CustomerDL.saveData(FILES.FilePaths.CustomerData);
+        }
+
+        private void btnCenter_Click(object sender, EventArgs e)
+        {
+            CUSTOMERS.LoanCenter extraForm = new CUSTOMERS.LoanCenter(customer);
+            extraForm.ShowDialog();
+            CustomerDL.saveData(FILES.FilePaths.CustomerData);
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

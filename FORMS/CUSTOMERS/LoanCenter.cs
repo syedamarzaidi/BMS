@@ -21,7 +21,10 @@ namespace BMS.FORMS.CUSTOMERS
 
         private void LoanCenter_Load(object sender, EventArgs e)
         {
-
+            lblAmount.Text = customer.LoanAmount.ToString();
+            lblInstallment.Text = customer.LoanInstallment.ToString();
+            lblPlan.Text = customer.LoanDuration.ToString();
+            lblRemaining.Text = customer.RemainingLoan.ToString();
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -35,6 +38,7 @@ namespace BMS.FORMS.CUSTOMERS
             {
                 MessageBox.Show("Installment is payed from your Bank Account");
             }
+            this.Close();
         }
     }
 }

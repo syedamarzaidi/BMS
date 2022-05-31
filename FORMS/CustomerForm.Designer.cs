@@ -31,7 +31,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.CustomerPanelTop = new System.Windows.Forms.Panel();
             this.btnLogout = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnCenter = new System.Windows.Forms.Button();
             this.btnLoanApply = new System.Windows.Forms.Button();
             this.btnWIthdraw = new System.Windows.Forms.Button();
             this.btnDeposit = new System.Windows.Forms.Button();
@@ -53,12 +53,13 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(985, 609);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // CustomerPanelTop
             // 
             this.CustomerPanelTop.BackColor = System.Drawing.Color.DarkRed;
             this.CustomerPanelTop.Controls.Add(this.btnLogout);
-            this.CustomerPanelTop.Controls.Add(this.button5);
+            this.CustomerPanelTop.Controls.Add(this.btnCenter);
             this.CustomerPanelTop.Controls.Add(this.btnLoanApply);
             this.CustomerPanelTop.Controls.Add(this.btnWIthdraw);
             this.CustomerPanelTop.Controls.Add(this.btnDeposit);
@@ -82,16 +83,18 @@
             this.btnLogout.UseVisualStyleBackColor = false;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
-            // button5
+            // btnCenter
             // 
-            this.button5.BackColor = System.Drawing.Color.DarkRed;
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(643, 0);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(104, 54);
-            this.button5.TabIndex = 6;
-            this.button5.Text = "Loan Center";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnCenter.BackColor = System.Drawing.Color.DarkRed;
+            this.btnCenter.ForeColor = System.Drawing.Color.White;
+            this.btnCenter.Location = new System.Drawing.Point(643, 0);
+            this.btnCenter.Name = "btnCenter";
+            this.btnCenter.Size = new System.Drawing.Size(104, 54);
+            this.btnCenter.TabIndex = 6;
+            this.btnCenter.Text = "Loan Center";
+            this.btnCenter.UseVisualStyleBackColor = false;
+            this.btnCenter.Visible = false;
+            this.btnCenter.Click += new System.EventHandler(this.btnCenter_Click);
             // 
             // btnLoanApply
             // 
@@ -185,7 +188,7 @@
         private System.Windows.Forms.Panel CustomerPanelTop;
         private System.Windows.Forms.Button btnInfo;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnCenter;
         private System.Windows.Forms.Button btnLoanApply;
         private System.Windows.Forms.Button btnWIthdraw;
         private System.Windows.Forms.Button btnDeposit;

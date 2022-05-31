@@ -32,11 +32,7 @@ namespace BMS.FORMS
 
         private void AdminForm_Load(object sender, EventArgs e)
         {
-           if (CustomerDL.ReadData(FilePaths.CustomerData))
-            {
-                MessageBox.Show("Customer Data Loaded Successfully");
-            }
-            
+     
         }
 
         private void btnAttendance_Click(object sender, EventArgs e)

@@ -22,13 +22,19 @@ namespace BMS
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            if (MUserDL.LoadUserData(FilePaths.MUserData))
+            if (MUserDL.isListEmpty())
             {
-                MessageBox.Show("Data Loaded Successfully");
+                if (MUserDL.LoadUserData(FilePaths.MUserData))
+                {
+                    MessageBox.Show("Data Loaded Successfully");
+                }
             }
-            if (CustomerDL.ReadData(FilePaths.CustomerData))
+            if (CustomerDL.isListEmpty())
             {
-                MessageBox.Show("Data Loaded Successfully");
+                if (CustomerDL.ReadData(FilePaths.CustomerData))
+                {
+                    MessageBox.Show("Data Loaded Successfully");
+                }
             }
             this.BackColor = Color.LightGray;
         }
