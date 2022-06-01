@@ -53,9 +53,9 @@
             this.lblBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBalance.Location = new System.Drawing.Point(200, 174);
             this.lblBalance.Name = "lblBalance";
-            this.lblBalance.Size = new System.Drawing.Size(43, 18);
+            this.lblBalance.Size = new System.Drawing.Size(17, 18);
             this.lblBalance.TabIndex = 8;
-            this.lblBalance.Text = "*****";
+            this.lblBalance.Text = "0";
             // 
             // textBox1
             // 

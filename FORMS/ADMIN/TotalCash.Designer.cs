@@ -61,9 +61,9 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(196, 72);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 16);
+            this.label2.Size = new System.Drawing.Size(16, 16);
             this.label2.TabIndex = 2;
-            this.label2.Text = "*********";
+            this.label2.Text = "0";
             // 
             // label3
             // 
@@ -71,9 +71,9 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(196, 140);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(62, 16);
+            this.label3.Size = new System.Drawing.Size(16, 16);
             this.label3.TabIndex = 3;
-            this.label3.Text = "*********";
+            this.label3.Text = "0";
             // 
             // btnClose
             // 

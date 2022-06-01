@@ -85,9 +85,9 @@
             this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblName.Location = new System.Drawing.Point(225, 53);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(64, 18);
+            this.lblName.Size = new System.Drawing.Size(45, 18);
             this.lblName.TabIndex = 4;
-            this.lblName.Text = "********";
+            this.lblName.Text = "none";
             // 
             // lblAddress
             // 
@@ -95,9 +95,9 @@
             this.lblAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAddress.Location = new System.Drawing.Point(225, 115);
             this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(57, 18);
+            this.lblAddress.Size = new System.Drawing.Size(45, 18);
             this.lblAddress.TabIndex = 5;
-            this.lblAddress.Text = "*******";
+            this.lblAddress.Text = "none";
             // 
             // lblPhone
             // 
@@ -106,9 +106,9 @@
             this.lblPhone.Location = new System.Drawing.Point(225, 178);
             this.lblPhone.Name = "lblPhone";
             this.lblPhone.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblPhone.Size = new System.Drawing.Size(57, 18);
+            this.lblPhone.Size = new System.Drawing.Size(107, 18);
             this.lblPhone.TabIndex = 6;
-            this.lblPhone.Text = "*******";
+            this.lblPhone.Text = "00000000000";
             // 
             // lblCnic
             // 
@@ -116,9 +116,9 @@
             this.lblCnic.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCnic.Location = new System.Drawing.Point(225, 243);
             this.lblCnic.Name = "lblCnic";
-            this.lblCnic.Size = new System.Drawing.Size(57, 18);
+            this.lblCnic.Size = new System.Drawing.Size(80, 18);
             this.lblCnic.TabIndex = 7;
-            this.lblCnic.Text = "*******";
+            this.lblCnic.Text = "00000000";
             // 
             // btnClose
             // 

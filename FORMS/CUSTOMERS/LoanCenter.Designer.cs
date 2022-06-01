@@ -86,9 +86,9 @@
             this.lblAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAmount.Location = new System.Drawing.Point(217, 84);
             this.lblAmount.Name = "lblAmount";
-            this.lblAmount.Size = new System.Drawing.Size(80, 16);
+            this.lblAmount.Size = new System.Drawing.Size(16, 16);
             this.lblAmount.TabIndex = 4;
-            this.lblAmount.Text = "************";
+            this.lblAmount.Text = "0";
             // 
             // lblInstallment
             // 
@@ -96,9 +96,9 @@
             this.lblInstallment.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblInstallment.Location = new System.Drawing.Point(217, 151);
             this.lblInstallment.Name = "lblInstallment";
-            this.lblInstallment.Size = new System.Drawing.Size(74, 16);
+            this.lblInstallment.Size = new System.Drawing.Size(16, 16);
             this.lblInstallment.TabIndex = 5;
-            this.lblInstallment.Text = "***********";
+            this.lblInstallment.Text = "0";
             // 
             // lblPlan
             // 
@@ -106,9 +106,9 @@
             this.lblPlan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPlan.Location = new System.Drawing.Point(217, 210);
             this.lblPlan.Name = "lblPlan";
-            this.lblPlan.Size = new System.Drawing.Size(68, 16);
+            this.lblPlan.Size = new System.Drawing.Size(45, 16);
             this.lblPlan.TabIndex = 6;
-            this.lblPlan.Text = "**********";
+            this.lblPlan.Text = "None";
             // 
             // lblRemaining
             // 
@@ -116,9 +116,9 @@
             this.lblRemaining.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRemaining.Location = new System.Drawing.Point(217, 266);
             this.lblRemaining.Name = "lblRemaining";
-            this.lblRemaining.Size = new System.Drawing.Size(74, 16);
+            this.lblRemaining.Size = new System.Drawing.Size(16, 16);
             this.lblRemaining.TabIndex = 7;
-            this.lblRemaining.Text = "***********";
+            this.lblRemaining.Text = "0";
             // 
             // btnPay
             // 

@@ -84,10 +84,5 @@ namespace BMS.FORMS
             extraForm.ShowDialog();
             CustomerDL.saveData(FILES.FilePaths.CustomerData);
         }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }
